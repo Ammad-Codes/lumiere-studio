@@ -310,7 +310,9 @@ function initParallax(reduceMotion) {
   const update = () => {
     wraps.forEach((wrap) => {
       const rect = wrap.getBoundingClientRect();
-      const offset = (rect.top + rect.height / 2 - window.innerHeight / 2) * -0.12;
+      const limit = rect.height * 0.12;                 // image is 30% taller, so never move past its edge
+      const raw = (rect.top + rect.height / 2 - window.innerHeight / 2) * -0.12;
+      const offset = Math.max(-limit, Math.min(limit, raw));
       wrap.querySelector('.parallax-img').style.transform = `translateY(${offset}px)`;
     });
     ticking = false;

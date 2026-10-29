@@ -46,8 +46,8 @@
 
   <!-- ============ 2. STICKY NAVBAR ============ -->
   <header id="navbar" class="fixed inset-x-0 top-0 z-50">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10" aria-label="Main navigation">
-      <a href="#home" class="js-grow font-display text-lg tracking-[0.3em] text-ivory">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-6 sm:py-5 lg:px-10" aria-label="Main navigation">
+      <a href="#home" class="js-grow whitespace-nowrap font-display text-base tracking-[0.25em] text-ivory sm:text-lg sm:tracking-[0.3em]">
         LUMIÈRE <span class="text-gold">STUDIO</span>
       </a>
 
@@ -88,15 +88,15 @@
   <main id="main">
 
     <!-- ============ 3. HERO ============ -->
-    <section id="home" class="relative h-screen min-h-[600px] overflow-hidden">
+    <section id="home" class="relative h-[100svh] min-h-[560px] overflow-hidden">
       <!-- Image slider with Ken Burns zoom -->
       <div id="heroSlider" class="absolute inset-0"><div class="slide active"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=1920&amp;q=80" alt="Bride and groom at golden hour" /></div><div class="slide"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=1920&amp;q=80" alt="Fashion model in studio light" /></div><div class="slide"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&amp;fit=crop&amp;w=1920&amp;q=80" alt="Mountain valley at dawn" /></div></div>
       <div class="hero-shade absolute inset-0"></div>
-      <div class="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-center px-6 lg:px-10">
+      <div class="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-center px-5 pt-16 sm:px-6 lg:px-10">
         <p class="eyebrow">Luxury Photography Studio</p>
-        <h1 id="heroTitle" class="mt-6 max-w-4xl font-display text-5xl leading-tight sm:text-6xl lg:text-7xl">Capturing Moments That Last Forever</h1>
+        <h1 id="heroTitle" class="mt-6 max-w-4xl font-display text-[2.6rem] leading-[1.1] sm:text-6xl sm:leading-tight lg:text-7xl">Capturing Moments That Last Forever</h1>
         <p class="mt-6 max-w-xl text-ivory/75">Weddings, portraits, fashion and events – crafted with light, patience and a cinematic eye.</p>
-        <div class="mt-10 flex flex-wrap gap-4">
+        <div class="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-4">
           <a href="#portfolio" class="btn btn-gold">View Portfolio</a>
           <a href="#contact" class="btn btn-outline">Book a Shoot</a>
         </div>
@@ -105,13 +105,13 @@
     </section>
 
     <!-- ============ 4. PORTFOLIO ============ -->
-    <section id="portfolio" class="px-6 py-28 lg:px-10">
+    <section id="portfolio" class="px-5 py-20 sm:px-6 sm:py-28 lg:px-10">
       <div class="mx-auto max-w-7xl">
         <div class="reveal text-center">
           <p class="eyebrow">Portfolio</p>
-          <h2 class="split-heading mt-4 font-display text-4xl sm:text-5xl">Selected Work</h2>
+          <h2 class="split-heading mt-4 font-display text-3xl sm:text-5xl">Selected Work</h2>
         </div>
-        <div class="reveal mt-10 flex flex-wrap justify-center gap-3" role="group" aria-label="Filter gallery"><button type="button" class="filter-btn active" data-filter="all">All</button><button type="button" class="filter-btn" data-filter="wedding">Wedding</button><button type="button" class="filter-btn" data-filter="portrait">Portrait</button><button type="button" class="filter-btn" data-filter="fashion">Fashion</button><button type="button" class="filter-btn" data-filter="nature">Nature</button><button type="button" class="filter-btn" data-filter="events">Events</button></div>
+        <div class="reveal mt-8 flex flex-wrap justify-center gap-2 sm:mt-10 sm:gap-3" role="group" aria-label="Filter gallery"><button type="button" class="filter-btn active" data-filter="all">All</button><button type="button" class="filter-btn" data-filter="wedding">Wedding</button><button type="button" class="filter-btn" data-filter="portrait">Portrait</button><button type="button" class="filter-btn" data-filter="fashion">Fashion</button><button type="button" class="filter-btn" data-filter="nature">Nature</button><button type="button" class="filter-btn" data-filter="events">Events</button></div>
         <div id="gallery" class="gallery mt-12">
         <figure class="gallery-item reveal-img" data-category="wedding" data-full="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" tabindex="0">
           <img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Golden Vows – wedding photograph" />
@@ -163,13 +163,13 @@
     </div>
 
     <!-- ============ 5. SERVICES ============ -->
-    <section id="services" class="px-6 py-28 lg:px-10">
+    <section id="services" class="px-5 py-20 sm:px-6 sm:py-28 lg:px-10">
       <div class="mx-auto max-w-7xl">
         <div class="reveal text-center">
           <p class="eyebrow">Services</p>
-          <h2 class="split-heading mt-4 font-display text-4xl sm:text-5xl">What We Capture</h2>
+          <h2 class="split-heading mt-4 font-display text-3xl sm:text-5xl">What We Capture</h2>
         </div>
-        <div class="stagger mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="stagger mt-12 grid gap-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4">
           <div class="reveal">
             <article class="service-card h-full p-8">
               <span class="service-icon">
@@ -219,9 +219,9 @@
     </section>
 
     <!-- ============ 6. ABOUT THE PHOTOGRAPHER ============ -->
-    <section id="about" class="px-6 py-28 lg:px-10">
-      <div class="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
-        <div class="parallax-wrap reveal-left relative h-[480px] overflow-hidden rounded-[24px] sm:h-[600px]">
+    <section id="about" class="px-5 py-20 sm:px-6 sm:py-28 lg:px-10">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div class="parallax-wrap reveal-left relative h-[380px] overflow-hidden rounded-[24px] sm:h-[480px] lg:h-[600px]">
           <img class="parallax-img" loading="lazy"
                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
                alt="Portrait of the photographer holding a camera" />
@@ -229,26 +229,26 @@
 
         <div class="reveal-right">
           <p class="eyebrow">About the Photographer</p>
-          <h2 class="split-heading mt-4 font-display text-4xl sm:text-5xl">Light Is Our Language</h2>
+          <h2 class="split-heading mt-4 font-display text-3xl sm:text-5xl">Light Is Our Language</h2>
           <p class="mt-6 leading-relaxed text-ivory/75">
             For over a decade, LUMIÈRE STUDIO has told stories through light. Every frame is planned with care, edited with patience and delivered as a keepsake you will treasure for life.
           </p>
 
-          <div class="mt-12 grid grid-cols-2 gap-8">
+          <div class="mt-10 grid grid-cols-2 gap-6 sm:mt-12 sm:gap-8">
             <div>
-              <p class="font-display text-4xl text-gold"><span class="counter" data-target="12">0</span>+</p>
+              <p class="font-display text-3xl text-gold sm:text-4xl"><span class="counter" data-target="12">0</span>+</p>
               <p class="mt-2 text-xs uppercase tracking-[0.2em] text-ivory/60">Years</p>
             </div>
             <div>
-              <p class="font-display text-4xl text-gold"><span class="counter" data-target="1800">0</span>+</p>
+              <p class="font-display text-3xl text-gold sm:text-4xl"><span class="counter" data-target="1800">0</span>+</p>
               <p class="mt-2 text-xs uppercase tracking-[0.2em] text-ivory/60">Shoots</p>
             </div>
             <div>
-              <p class="font-display text-4xl text-gold"><span class="counter" data-target="950">0</span>+</p>
+              <p class="font-display text-3xl text-gold sm:text-4xl"><span class="counter" data-target="950">0</span>+</p>
               <p class="mt-2 text-xs uppercase tracking-[0.2em] text-ivory/60">Happy Clients</p>
             </div>
             <div>
-              <p class="font-display text-4xl text-gold"><span class="counter" data-target="40">0</span>+</p>
+              <p class="font-display text-3xl text-gold sm:text-4xl"><span class="counter" data-target="40">0</span>+</p>
               <p class="mt-2 text-xs uppercase tracking-[0.2em] text-ivory/60">Awards</p>
             </div>
           </div>
@@ -257,11 +257,11 @@
     </section>
 
     <!-- ============ 7. BEFORE / AFTER ============ -->
-    <section id="editing" class="px-6 py-28 lg:px-10">
+    <section id="editing" class="px-5 py-20 sm:px-6 sm:py-28 lg:px-10">
       <div class="mx-auto max-w-5xl">
         <div class="reveal text-center">
           <p class="eyebrow">The Edit</p>
-          <h2 class="split-heading mt-4 font-display text-4xl sm:text-5xl">Before &amp; After</h2>
+          <h2 class="split-heading mt-4 font-display text-3xl sm:text-5xl">Before &amp; After</h2>
           <p class="mt-4 text-ivory/70">Drag the handle to see how our colour grading brings a frame to life.</p>
         </div>
         <div id="compare" class="compare reveal-zoom mt-12">
@@ -276,28 +276,28 @@
     </section>
 
     <!-- ============ 8. PRICING ============ -->
-    <section id="pricing" class="px-6 py-28 lg:px-10">
+    <section id="pricing" class="px-5 py-20 sm:px-6 sm:py-28 lg:px-10">
       <div class="mx-auto max-w-7xl">
         <div class="reveal text-center">
           <p class="eyebrow">Pricing</p>
-          <h2 class="split-heading mt-4 font-display text-4xl sm:text-5xl">Choose Your Package</h2>
+          <h2 class="split-heading mt-4 font-display text-3xl sm:text-5xl">Choose Your Package</h2>
         </div>
-        <div class="stagger mt-16 grid items-stretch gap-8 lg:grid-cols-3">
-        <div class="reveal"><article class="price-card glass-card h-full p-10" data-tilt>
+        <div class="stagger mx-auto mt-14 grid max-w-md items-stretch gap-10 sm:mt-16 md:max-w-none md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        <div class="reveal"><article class="price-card glass-card h-full p-7 sm:p-10" data-tilt>
           
           <h3 class="font-display text-2xl">Basic</h3>
           <p class="mt-4 font-display text-5xl text-gold">$299</p>
           <ul class="mt-8 space-y-3 text-sm text-ivory/75"><li>2-hour session</li><li>1 location</li><li>30 edited photos</li><li>Online gallery</li></ul>
           <a href="#contact" class="btn btn-outline mt-10 w-full">Choose Basic</a>
         </article></div>
-        <div class="reveal"><article class="price-card glass-card featured h-full p-10" data-tilt>
+        <div class="reveal"><article class="price-card glass-card featured h-full p-7 sm:p-10" data-tilt>
           <span class="badge">Most Popular</span>
           <h3 class="font-display text-2xl">Premium</h3>
           <p class="mt-4 font-display text-5xl text-gold">$699</p>
           <ul class="mt-8 space-y-3 text-sm text-ivory/75"><li>6-hour coverage</li><li>2 locations</li><li>150 edited photos</li><li>Second shooter</li><li>Fine-art prints</li></ul>
           <a href="#contact" class="btn btn-gold mt-10 w-full">Choose Premium</a>
         </article></div>
-        <div class="reveal"><article class="price-card glass-card h-full p-10" data-tilt>
+        <div class="reveal"><article class="price-card glass-card h-full p-7 sm:p-10" data-tilt>
           
           <h3 class="font-display text-2xl">Luxury</h3>
           <p class="mt-4 font-display text-5xl text-gold">$1,499</p>
@@ -309,7 +309,7 @@
     </section>
 
     <!-- ============ 9. TESTIMONIALS ============ -->
-    <section id="testimonials" class="px-6 py-28 lg:px-10">
+    <section id="testimonials" class="px-5 py-20 sm:px-6 sm:py-28 lg:px-10">
       <div class="mx-auto max-w-4xl text-center">
         <p class="eyebrow reveal">Kind Words</p>
         <div id="testiWrap" class="testi-wrap reveal mt-10">
@@ -317,19 +317,19 @@
             <figure class="testi-slide">
               <img loading="lazy" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="Photo of Sara &amp; Daniel" class="mx-auto h-20 w-20 rounded-full object-cover" />
               <p class="stars mt-6" aria-label="5 out of 5 stars">★★★★★</p>
-              <blockquote class="mt-6 font-display text-2xl italic leading-relaxed sm:text-3xl">“Every photo feels like a scene from a film. We cried looking through our wedding album.”</blockquote>
+              <blockquote class="mt-6 font-display text-xl italic leading-relaxed sm:text-3xl">“Every photo feels like a scene from a film. We cried looking through our wedding album.”</blockquote>
               <figcaption class="eyebrow mt-6">Sara &amp; Daniel</figcaption>
             </figure>
             <figure class="testi-slide">
               <img loading="lazy" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="Photo of Omar Haddad" class="mx-auto h-20 w-20 rounded-full object-cover" />
               <p class="stars mt-6" aria-label="5 out of 5 stars">★★★★★</p>
-              <blockquote class="mt-6 font-display text-2xl italic leading-relaxed sm:text-3xl">“Professional, calm and wildly creative. Our brand shoot doubled our engagement.”</blockquote>
+              <blockquote class="mt-6 font-display text-xl italic leading-relaxed sm:text-3xl">“Professional, calm and wildly creative. Our brand shoot doubled our engagement.”</blockquote>
               <figcaption class="eyebrow mt-6">Omar Haddad</figcaption>
             </figure>
             <figure class="testi-slide">
               <img loading="lazy" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="Photo of Elena Rossi" class="mx-auto h-20 w-20 rounded-full object-cover" />
               <p class="stars mt-6" aria-label="5 out of 5 stars">★★★★★</p>
-              <blockquote class="mt-6 font-display text-2xl italic leading-relaxed sm:text-3xl">“I have never felt so comfortable in front of a camera. The portraits are stunning.”</blockquote>
+              <blockquote class="mt-6 font-display text-xl italic leading-relaxed sm:text-3xl">“I have never felt so comfortable in front of a camera. The portraits are stunning.”</blockquote>
               <figcaption class="eyebrow mt-6">Elena Rossi</figcaption>
             </figure>
           </div>
@@ -345,7 +345,7 @@
     <!-- ============ 10. INSTAGRAM STRIP ============ -->
     <section id="instagram" class="py-20">
       <p class="eyebrow reveal text-center">@lumiere.studio</p>
-      <div class="stagger mt-8 grid grid-cols-2 gap-3 px-3 sm:grid-cols-3 lg:grid-cols-6">
+      <div class="stagger mx-auto mt-8 grid max-w-[1600px] grid-cols-2 gap-3 px-3 sm:grid-cols-3 lg:grid-cols-6">
         <button type="button" class="insta-tile" aria-pressed="false" aria-label="Like photo 1">
           <img loading="lazy" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Instagram photo 1" />
           <span class="insta-heart"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></span>
@@ -374,17 +374,17 @@
     </section>
 
     <!-- ============ 11. CONTACT ============ -->
-    <section id="contact" class="px-6 py-28 lg:px-10">
-      <div class="mx-auto grid max-w-6xl gap-16 lg:grid-cols-2">
+    <section id="contact" class="px-5 py-20 sm:px-6 sm:py-28 lg:px-10">
+      <div class="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:gap-16">
         <div class="reveal-left">
           <p class="eyebrow">Contact</p>
-          <h2 class="split-heading mt-4 font-display text-4xl sm:text-5xl">Let's Create Together</h2>
+          <h2 class="split-heading mt-4 font-display text-3xl sm:text-5xl">Let's Create Together</h2>
           <p class="mt-6 text-ivory/70">Tell us about your day, your brand or your idea. We reply within 24 hours.</p>
           <p class="mt-8 text-gold">hello@lumierestudio.com</p>
           <p class="mt-2 text-ivory/70">+1 (555) 014-2290</p>
         </div>
         <div class="reveal-right relative">
-          <form id="bookingForm" class="glass-card space-y-6 p-8 sm:p-10" novalidate>
+          <form id="bookingForm" class="glass-card space-y-6 p-5 sm:p-10" novalidate>
             <div class="field"><input id="fName" name="name" type="text" placeholder=" " required /><label for="fName">Your Name</label></div>
             <div class="field"><input id="fEmail" name="email" type="email" placeholder=" " required /><label for="fEmail">Email Address</label></div>
             <div class="field"><select id="fType" name="type" required><option value="" disabled selected></option><option>Wedding</option><option>Portrait</option><option>Fashion</option><option>Commercial</option><option>Events</option></select><label for="fType">Shoot Type</label></div>
@@ -403,8 +403,8 @@
   </main>
 
   <!-- ============ 12. FOOTER ============ -->
-  <footer class="border-t border-ivory/10 px-6 py-16 lg:px-10">
-    <div class="mx-auto grid max-w-7xl gap-12 md:grid-cols-3">
+  <footer class="border-t border-ivory/10 px-5 pb-24 pt-16 sm:px-6 lg:px-10 lg:pb-16">
+    <div class="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
       <div>
         <p class="font-display text-lg tracking-[0.3em]">LUMIÈRE <span class="text-gold">STUDIO</span></p>
         <p class="mt-4 text-sm text-ivory/60">Luxury photography for life's most beautiful moments.</p>
@@ -423,11 +423,11 @@
           <li><a href="#contact" class="hover:text-gold">Contact</a></li>
         </ul>
       </div>
-      <div>
+      <div class="sm:col-span-2 lg:col-span-1">
         <p class="eyebrow">Newsletter</p>
         <form id="newsletterForm" class="mt-4 flex gap-2" novalidate>
-          <input type="email" placeholder="Your email" aria-label="Email address" class="min-w-0 flex-1 rounded-[16px] border border-ivory/20 bg-transparent px-4 py-3 text-sm outline-none focus:border-gold" />
-          <button type="submit" class="btn btn-gold">Join</button>
+          <input type="email" placeholder="Your email" aria-label="Email address" class="w-0 min-w-0 flex-1 rounded-[16px] border border-ivory/20 bg-transparent px-4 py-3 text-sm outline-none focus:border-gold" />
+          <button type="submit" class="btn btn-gold shrink-0 !px-5">Join</button>
         </form>
         <p id="newsletterMsg" class="mt-3 text-sm text-gold" aria-live="polite"></p>
       </div>
